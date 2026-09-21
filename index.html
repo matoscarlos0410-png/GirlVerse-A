@@ -1,0 +1,92 @@
+```html
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>GirlVerse 3D</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Pantalla inicial -->
+  <div id="start">
+    <div class="start-card">
+
+      <div class="logo">
+        GirlVerse
+      </div>
+
+      <p>
+        Tu mundo. Tu estilo. Tu historia.
+      </p>
+
+      <p>
+        Explora libremente un mundo 3D,
+        conoce lugares, personaliza tu vida
+        y disfruta de tu propio espacio.
+      </p>
+
+      <button id="play">
+        ENTRAR AL MUNDO
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- HUD DEL JUEGO -->
+  <div id="hud">
+
+    <b>🌸 GirlVerse</b>
+
+    <span>
+      💎 <strong id="money">250</strong>
+    </span>
+
+    <span>
+      📍 <strong id="place">Ciudad</strong>
+    </span>
+
+    <span>
+      🎒 Objetos:
+      <strong id="items">0</strong>
+    </span>
+
+  </div>
+
+
+  <!-- Mensajes -->
+  <div id="message"></div>
+
+
+  <!-- Controles -->
+  <div id="hint">
+    WASD / Flechas = caminar ·
+    Mouse = cámara ·
+    E = interactuar ·
+    B = guardar
+  </div>
+
+
+  <!-- Juego -->
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
+```
+
+Este archivo es la **entrada principal del juego**. Conecta el diseño, Three.js y todos los módulos de GirlVerse.
+
+El siguiente es **2. `style.css`**, que hará que la interfaz tenga el aspecto moderno del juego.
